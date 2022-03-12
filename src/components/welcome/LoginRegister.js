@@ -1,35 +1,37 @@
-import { useState, useEffect, useRef } from "react";
-import { Routes, Route } from 'react-router';
+// import { useState, useEffect } from "react";
+// import { Routes, Route } from 'react-router';
 
-export default function LoginRegister() {
-    const [userName, setUsername] = useState();
-    const [password, setPassword] = useState();
+// export default function LoginRegister() {
+//     const [userName, setUsername] = useState();
+//     const [password, setPassword] = useState();
 
-    const handleUsername = (e) => {
-        e.preventDefault();
-        setUsername(e.target.value);
-    }
+//     const handleUsername = (e) => {
+//         e.preventDefault();
+//         setUsername(e.target.value);
+//     }
 
-    const handlePassword = (e) => {
-        e.preventDefault();
-        setPassword(e.target.value);
-    }
+//     const handlePassword = (e) => {
+//         e.preventDefault();
+//         setPassword(e.target.value);
+//     }
 
-    const expandLogin = () => {
+//     const expandLogin = () => {
 
-    }
+//     }
 
-    const expandRegister = () => {
+//     const expandRegister = () => {
 
-    }
+//     }
 
-    return (
-        <>
-        <h1>Login or Register here</h1>
-        <div className="registration-buttons">
-            <button onClick={expandLogin} id="login">Login</button>
-            <button id="register">Register</button>
-        </div>
-        </>
-    )
-}
+//     return (
+//         <>
+//         <h1>Login or Register here</h1>
+//         <div className="registration-buttons">
+//             <button onClick={expandLogin} id="login">Login</button>
+//             <button id="register">Register</button>
+
+//             <Link to=
+//         </div>
+//         </>
+//     )
+// }
