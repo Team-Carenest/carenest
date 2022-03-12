@@ -1,7 +1,9 @@
 import './App.css';
-import Welcome from './components/welcome/Welcome';
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router';
+
+import Welcome from './components/welcome/Welcome';
+import LoginRegister from './components/welcome/LoginRegister';
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<Welcome />} />
+        <Route path="/login" element={<LoginRegister />} />
       </Routes>
       </BrowserRouter>
     </div>
