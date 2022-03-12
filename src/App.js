@@ -1,9 +1,16 @@
 import './App.css';
+import Welcome from './components/welcome/Welcome';
+import { BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router';
 
 function App() {
   return (
     <div className="App-header">
-      <h1>This is the Carenest app</h1>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
