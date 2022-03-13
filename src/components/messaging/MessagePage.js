@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router";
 import { store } from "../store/Store";
+import { useEffect, useState } from "react";
 
 export default function MessagePage() {
+    const [typing, setTyping] = useState('');
+    const [userMessages, setUserMessages] = useState([]);
+
     const navigate = useNavigate();
 
     const navigateBack = () => {
@@ -20,9 +24,21 @@ export default function MessagePage() {
                 <p>What questions can I answer for you?</p>
             </div>
             <div className="parent-bubble">
-                <p>Me:</p>
-                <p>...</p>
+                {typing ? <p>Me:</p> : null}
+                {typing ? <p>...</p> : null}
             </div>
+            {userMessages.map((each) => {
+                return (
+                    <div className="parent-bubble">
+                        <p>{each}</p>
+                    </div>
+                )
+            })}
+
+            <textarea onChange={(e) => e.target.value ? setTyping(e.target.value) : setTyping(null)}>
+            </textarea>
+
+            <button>Send Message</button>
             <button onClick={navigateBack}>Back</button>
         </div>
     );
