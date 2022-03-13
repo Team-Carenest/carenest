@@ -1,8 +1,10 @@
 export default function ProfileCard( { config }) {
+    // const { name, profileImage, miniBio, city, ZIP, price } = config;
+
     return (
         <div className="profile-card">
             <div className="top-data">
-                <h1>Profile name</h1>
+                <h1>{'Profile name'}</h1>
                 <p>Image</p>
                 <p>Mini bio</p>
                 <button className="button-style-1">Send a message</button>

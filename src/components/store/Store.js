@@ -15,6 +15,7 @@ export const store = {
                 ageGroups: '2 to 4',
             },
             rating: 5,
+            price: 50,
             parentFeedback: [
                 {
                     parentName: 'Some parent',
@@ -42,6 +43,7 @@ export const store = {
                 ageGroups: 'teenager'
             },
             rating: 5,
+            price: 75,
             parentFeedback: [
                 {
                     parentName: 'Some parent',
@@ -69,6 +71,7 @@ export const store = {
                 ageGroups: 'teenager'
             },
             rating: 5,
+            price: 40,
             parentFeedback: [
                 {
                     parentName: 'Some parent',

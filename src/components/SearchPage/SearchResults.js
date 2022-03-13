@@ -1,30 +1,58 @@
+import { useState, useEffect } from "react";
 import ProfileCard from "../profiles/ProfileCard"
 import { store } from '../store/Store';
 
 export default function SearchResults() {
-    const defaultProfileMap = () => {
-        let arrayOfProfiles = [];
+    const [profileConfig, setProfileConfig] = useState([]);
+
+    const mapProfileConfig = () => {
+        let details = [];
         for (let profile of store.nannyProfiles) {
-            arrayOfProfiles.push([
-                profile.name,
-                profile.profileImage,
-                profile.miniBio,
-                profile.longBio,
-                (profile.city + ' ' + profile.ZIP),
+            details.push({
+                name: profile.name,
+                profileImage: profile.profileImage,
+                miniBio: profile.miniBio,
+                city: profile.city,
+                ZIP: profile.ZIP,
+                price: profile.price,
+                // other props, formatted props:
+                // profile.longBio,
                 // profile.skills,
-                (profile.rating + ' of 5 stars'),
+                // (profile.city + ' ' + profile.ZIP),
+                // (profile.rating + ' of 5 stars'),
+
                 // profile.parentFeedback
-            ]);
+            });
         }
-        return arrayOfProfiles.map((item) => {
-            return item.map((prop) => <p>{prop}</p>)
-        })
+
+        return details;
+
+        // THE BELOW FOR TESTING PATHS TO ACCESS VALUES
+        // return arrayOfProfiles.map((item) => {
+        //     return item.map((prop) => <p>{prop}</p>)
+        // })
+    }
+
+    const mapOntoCards = () => {
+        const details = mapProfileConfig();
+
+        let toComponent = [];
+
+        for (let config of details) {
+            toComponent.push(<ProfileCard config={config} />);
+        }
+
+        return (
+            <>
+            {toComponent}
+            </>
+        )
     }
 
     return (
         <>
+        { mapOntoCards() }
         <ProfileCard />
-        { defaultProfileMap() }
         </>
     )
 }
