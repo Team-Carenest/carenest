@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router";
+
 export default function ProfileCard( { config }) {
     const name = config.name;
     const image = config.profileImage;
@@ -7,13 +9,22 @@ export default function ProfileCard( { config }) {
     const price = config.price;
     const rating = config.rating;
 
+    const navigate = useNavigate();
+
+    const handleNavigate = (name) => {
+        navigate(`/parent/messaging/maria-ament`)
+    }
+
     return (
         <div className="profile-card">
             <div className="top-data">
                 <h1>{name}</h1>
                 <img alt={name} src={`../../media/${image}`} />
                 <p>{miniBio}</p>
-                <button className="button-style-1">Send a message</button>
+                <button
+                    className="button-style-1"
+                    onClick={handleNavigate}>
+                        Send a message</button>
             </div>
 
             <div className="skills">

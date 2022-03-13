@@ -8,6 +8,7 @@ import Register from './components/welcome/Register';
 import SearchPage from './components/SearchPage/SearchPage';
 
 import ParentProfile from './components/profiles/ParentProfile';
+import MessagePage from './components/messaging/MessagePage';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/parent" element={<ParentProfile />} />
         <Route path="/register" element={<Register />} />
         <Route path="/parent/search" element={<SearchPage />} />
+        <Route path="/parent/messaging/maria-ament" element={<MessagePage />} />
       </Routes>
       </BrowserRouter>
     </div>
