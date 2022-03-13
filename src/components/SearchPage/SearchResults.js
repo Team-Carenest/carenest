@@ -1,12 +1,8 @@
-import { useState, useEffect } from "react";
 import ProfileCard from "../profiles/ProfileCard"
 import ParentProfileCard from "../profiles/ParentProfileCard"
 import { store } from '../store/Store';
 
 export default function SearchResults() {
-    const [profileConfig, setProfileConfig] = useState([]);
-
-
     const mapProfileConfig = () => {
         let details = [];
         for (let profile of store.nannyProfiles) {
@@ -17,22 +13,10 @@ export default function SearchResults() {
                 city: profile.city,
                 ZIP: profile.ZIP,
                 price: profile.price,
-                // other props, formatted props:
-                // profile.longBio,
-                // profile.skills,
-                // (profile.city + ' ' + profile.ZIP),
-                // (profile.rating + ' of 5 stars'),
-
-                // profile.parentFeedback
             });
         }
 
         return details;
-
-        // THE BELOW FOR TESTING PATHS TO ACCESS VALUES
-        // return arrayOfProfiles.map((item) => {
-        //     return item.map((prop) => <p>{prop}</p>)
-        // })
     }
 
     const mapOntoCards = () => {
@@ -54,7 +38,6 @@ export default function SearchResults() {
     return (
         <>
         { mapOntoCards() }
-        <ProfileCard />
         <ParentProfileCard />
         </>
     )
