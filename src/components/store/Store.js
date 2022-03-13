@@ -5,7 +5,7 @@ export const store = {
     nannyProfiles: [
         {
             name: 'Maria W. Ament',
-            profileImage: 'put in a url',
+            profileImage: '../../media/babysitter.jpg',
             miniBio: 'Offering professional care for 12 years',
             longBio: nannyLongBio,
             city: 'Nashville, TN',
@@ -15,6 +15,7 @@ export const store = {
                 ageGroups: '2 to 4',
             },
             rating: 5,
+            price: 50,
             parentFeedback: [
                 {
                     parentName: 'Some parent',
@@ -32,7 +33,7 @@ export const store = {
         },
         {
             name: 'Sue R. Vaughn',
-            profileImage: 'put in a url',
+            profileImage: '../../media/babsitter3.jpg',
             miniBio: 'libero nunc consequat interdum varius sit amet',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat.',
             city: 'Murfreesboro, TN',
@@ -42,6 +43,7 @@ export const store = {
                 ageGroups: 'teenager'
             },
             rating: 5,
+            price: 75,
             parentFeedback: [
                 {
                     parentName: 'Some parent',
@@ -69,6 +71,7 @@ export const store = {
                 ageGroups: 'teenager'
             },
             rating: 5,
+            price: 40,
             parentFeedback: [
                 {
                     parentName: 'Some parent',
@@ -88,7 +91,7 @@ export const store = {
     parentProfiles: [
         {
             name: 'Elsie J. Lopez',
-            profileImage: 'put in a url',
+            profileImage: '../../media/FamilyPicture.jpg',
             miniBio: 'Single mom seeking help with two young children',
             longBio: parentLongBio,
             photoGallery: [
@@ -98,7 +101,7 @@ export const store = {
         },
         {
             name: 'Mildred G. Vandyne',
-            profileImage: 'put in a url',
+            profileImage: '../../media/FamilyPicture2.jpg',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
             photoGallery: [
@@ -108,7 +111,7 @@ export const store = {
         },
         {
             name: 'Kari I. Turner',
-            profileImage: 'put in a url',
+            profileImage: '../../media/FamilyPicture3.jpg',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
             photoGallery: [
