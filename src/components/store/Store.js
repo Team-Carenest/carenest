@@ -61,7 +61,7 @@ export const store = {
         },
         {
             name: 'Cathy M. Winters',
-            profileImage: 'put in a url',
+            profileImage: 'FamilyPicture3.jpg',
             miniBio: 'libero nunc consequat interdum varius sit amet',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat.',
             city: 'Murfreesboro, TN',
@@ -91,33 +91,21 @@ export const store = {
     parentProfiles: [
         {
             name: 'Elsie J. Lopez',
-            profileImage: '../../media/FamilyPicture.jpg',
+            profileImage: 'FamilyPicture.jpg',
             miniBio: 'Single mom seeking help with two young children',
             longBio: parentLongBio,
-            photoGallery: [
-                'url string',
-                'url string 2'
-            ]
         },
         {
             name: 'Mildred G. Vandyne',
             profileImage: 'FamilyPicture2.jpg',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
-            photoGallery: [
-                'url string',
-                'url string 2'
-            ]
         },
         {
             name: 'Kari I. Turner',
-            profileImage: 'FamilyPicture3.jpg',
+            profileImage: '',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
-            photoGallery: [
-                'url string',
-                'url string 2'
-            ]
         },
     ]
 }

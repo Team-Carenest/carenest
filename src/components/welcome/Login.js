@@ -16,7 +16,7 @@ export default function Login() {
             return;
         }
 
-        navigate('/parent');
+        navigate('/parent/elsie');
     }
 
     const handleNav = () => {
