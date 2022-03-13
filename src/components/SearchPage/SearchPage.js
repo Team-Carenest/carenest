@@ -1,6 +1,9 @@
-export default function SearchResults() {
+
+
+export default function SearchPage() {
     return (
         <>
+
         </>
     )
 }
