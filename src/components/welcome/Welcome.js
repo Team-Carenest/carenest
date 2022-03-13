@@ -17,9 +17,16 @@ export default function Welcome() {
         <h2>Compassionate childcare solutions for working parents</h2>
 
         <div className="welcome-options">
-            <button className="button-style-1" onClick={handleLogin}>Login</button>
+            <button
+                className="button-style-1"
+                onClick={handleLogin}>Login</button>
+
             <button className="button-style-1" onClick={handleRegister}>Register</button>
         </div>
         </>
     );
 }
+
+<button>
+
+</button>
