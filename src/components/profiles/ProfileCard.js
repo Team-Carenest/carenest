@@ -1,5 +1,16 @@
 export default function ProfileCard( { config }) {
-    // const { name, profileImage, miniBio, city, ZIP, price } = config;
+    const { name } = config;
+
+    console.log(name);
+
+    /*
+    name: profile.name,
+                profileImage: profile.profileImage,
+                miniBio: profile.miniBio,
+                city: profile.city,
+                ZIP: profile.ZIP,
+                price: profile.price,
+    */
 
     return (
         <div className="profile-card">

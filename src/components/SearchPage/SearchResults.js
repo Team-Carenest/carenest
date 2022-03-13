@@ -15,22 +15,10 @@ export default function SearchResults() {
                 city: profile.city,
                 ZIP: profile.ZIP,
                 price: profile.price,
-                // other props, formatted props:
-                // profile.longBio,
-                // profile.skills,
-                // (profile.city + ' ' + profile.ZIP),
-                // (profile.rating + ' of 5 stars'),
-
-                // profile.parentFeedback
             });
         }
 
         return details;
-
-        // THE BELOW FOR TESTING PATHS TO ACCESS VALUES
-        // return arrayOfProfiles.map((item) => {
-        //     return item.map((prop) => <p>{prop}</p>)
-        // })
     }
 
     const mapOntoCards = () => {
@@ -39,6 +27,7 @@ export default function SearchResults() {
         let toComponent = [];
 
         for (let config of details) {
+            console.log(config);
             toComponent.push(<ProfileCard config={config} />);
         }
 
