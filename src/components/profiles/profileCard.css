@@ -1,17 +1,24 @@
 .nanny{
     color: white
 }
-
+/* 
 .miniBioN{
     background-color: #C4C4C4;
     width: 50%;
     height: 50%;
     color: black; 
-}
+} */
 
 img{
     width: 10%;
     height: 10%;
     border: 5px solid #ddd;
     border-radius: 4px;
+}
+
+.button-style-1{
+background-color: #B178BA;
+border: none;
+color: white;
+border-radius: 10px;
 }

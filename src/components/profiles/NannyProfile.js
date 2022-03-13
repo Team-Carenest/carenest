@@ -16,9 +16,9 @@ export default function NannyProfile() {
             <img src={src} alt={name} />
             <h1>{name}</h1>
 
-            <p>{store.nannyProfiles[0].longBio}</p>
+            <p className="nannyBio">{store.nannyProfiles[0].longBio}</p>
 
-            <button onClick={navToCalendar}>Show current schedule</button>
+            <button className="nannyBnt" onClick={navToCalendar}>Show current schedule</button>
         </div>
     );
 }

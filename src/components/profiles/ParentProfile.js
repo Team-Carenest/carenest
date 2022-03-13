@@ -16,9 +16,9 @@ export default function ParentProfile() {
             <img src={src} alt={name} />
             <h1>{name}</h1>
 
-            <p>{store.parentProfiles[0].longBio}</p>
+            <p className="parentBio" >{store.parentProfiles[0].longBio}</p>
 
-            <button onClick={handleNavToSearch}>Search available caretakers</button>
+            <button className="parentBnt" onClick={handleNavToSearch}>Search available caretakers</button>
         </div>
     );
 }
