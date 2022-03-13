@@ -5,9 +5,20 @@ export default function SearchResults() {
     const defaultProfileMap = () => {
         let arrayOfProfiles = [];
         for (let profile of store.nannyProfiles) {
-            arrayOfProfiles.push(<p>{profile.name}</p>);
+            arrayOfProfiles.push([
+                profile.name,
+                profile.profileImage,
+                profile.miniBio,
+                profile.longBio,
+                (profile.city + ' ' + profile.ZIP),
+                // profile.skills,
+                (profile.rating + ' of 5 stars'),
+                // profile.parentFeedback
+            ]);
         }
-        return arrayOfProfiles.map((name) => <p>{name}</p>)
+        return arrayOfProfiles.map((item) => {
+            return item.map((prop) => <p>{prop}</p>)
+        })
     }
 
     return (

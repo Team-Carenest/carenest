@@ -7,6 +7,8 @@ export default function SearchPage() {
         <SearchBar />
         <div className="sidebar">
             {/* Pass in sidebar here, directly */}
+            <button>Cost</button>
+            <button>Other stuff</button>
         </div>
         <SearchResults />
         </>
