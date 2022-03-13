@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import ProfileCard from "../profiles/ProfileCard"
+import ParentProfileCard from "../profiles/ParentProfileCard"
 import { store } from '../store/Store';
 
 export default function SearchResults() {
     const [profileConfig, setProfileConfig] = useState([]);
+
 
     const mapProfileConfig = () => {
         let details = [];
@@ -53,6 +55,7 @@ export default function SearchResults() {
         <>
         { mapOntoCards() }
         <ProfileCard />
+        <ParentProfileCard />
         </>
     )
 }
