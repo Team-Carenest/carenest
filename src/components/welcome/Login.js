@@ -16,7 +16,13 @@ export default function Login() {
             return;
         }
 
-        navigate('/parent/elsie');
+        if (username === 'Maria') {
+            navigate('/nanny/maria')
+        }
+
+        if (username === 'Elsie') {
+            navigate('/parent/elsie');
+        }
     }
 
     const handleNav = () => {
