@@ -19,7 +19,7 @@ export default function ProfileCard( { config }) {
         <div className="profile-card">
             <div className="top-data">
              {/* <img alt={name} src={`../media/${image}`} /> */}
-             <img src={require('../../media/FamilyPicture.jpg')} alt={name} classname="pic"/>
+             <img src={image} alt={name} classname="pic"/>
                 <h2 className="nanny">{name}</h2>
               
                 <p className="miniBioN">{miniBio}</p>
