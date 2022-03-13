@@ -1,10 +1,7 @@
-import { useState, useEffect } from "react";
 import ProfileCard from "../profiles/ProfileCard"
 import { store } from '../store/Store';
 
 export default function SearchResults() {
-    const [profileConfig, setProfileConfig] = useState([]);
-
     const mapProfileConfig = () => {
         let details = [];
         for (let profile of store.nannyProfiles) {
@@ -27,7 +24,6 @@ export default function SearchResults() {
         let toComponent = [];
 
         for (let config of details) {
-            console.log(config);
             toComponent.push(<ProfileCard config={config} />);
         }
 
@@ -41,7 +37,6 @@ export default function SearchResults() {
     return (
         <>
         { mapOntoCards() }
-        <ProfileCard />
         </>
     )
 }
