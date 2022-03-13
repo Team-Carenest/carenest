@@ -24,6 +24,10 @@ export default function Register() {
         }
     }
 
+    const navigateBack = () => {
+        navigate('/');
+    }
+
     return (
         <>
         <h1>Thanks for joining our community!</h1>
@@ -56,6 +60,7 @@ export default function Register() {
         </form>
 
         <button onClick={handleSubmit}>Register your account</button>
+        <button onClick={navigateBack}>Back</button>
         </>
     );
 }
