@@ -18,9 +18,11 @@ export default function ProfileCard( { config }) {
     return (
         <div className="profile-card">
             <div className="top-data">
-                <h1>{name}</h1>
-                <img alt={name} src={image} />
-                <p>{miniBio}</p>
+             {/* <img alt={name} src={`../media/${image}`} /> */}
+             <img src={require('../../media/FamilyPicture.jpg')} alt={name} classname="pic"/>
+                <h2 className="nanny">{name}</h2>
+              
+                <p className="miniBioN">{miniBio}</p>
                 <button
                     className="button-style-1"
                     onClick={handleNavigate}>

@@ -6,7 +6,7 @@ import Welcome from './components/welcome/Welcome';
 import Login from './components/welcome/Login';
 import Register from './components/welcome/Register';
 import SearchPage from './components/SearchPage/SearchPage';
-
+import "./components/profiles/profileCard.css"
 import ParentProfile from './components/profiles/ParentProfile';
 import NannyProfile from './components/profiles/NannyProfile';
 import MessagePage from './components/messaging/MessagePage';
