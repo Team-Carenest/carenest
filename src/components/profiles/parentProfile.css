@@ -1,0 +1,11 @@
+.parentBnt{
+    background-color: #B178BA;
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+p.parentBio{
+    background-color: #C4C4C4;
+    color: black;
+}
