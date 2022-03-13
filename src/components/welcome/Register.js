@@ -6,18 +6,26 @@ export default function Register() {
     const [password, setPassword] = useState('');
     const [verifyPassword, setVerifyPassword] = useState('');
     
-    const [profileType, setProfileType] = useState(null);
+    const [profileType, setProfileType] = useState('none');
 
     const navigate = useNavigate();
 
     const handleSubmit = () => {
         if (!profileType) {
             return;
-        } else if (profileType === /'nanny'/i) {
-            navigate('/new-profile/nanny');
-        } else if (profileType === /'parent'/i) {
-            navigate('/new-profile/parent');
         }
+
+        if (profileType === 'nanny') {
+            navigate('/nanny/maria');
+        }
+        
+        if (profileType === 'parent') {
+            navigate('/parent/elsie');
+        }
+    }
+
+    const navigateBack = () => {
+        navigate('/');
     }
 
     return (
@@ -44,7 +52,7 @@ export default function Register() {
             <div className="form-row">
                 <label htmlFor="register-typeof-account">Select an account type: </label>
                 <select onChange={(e) => setProfileType(e.target.value)} id="register-typeof-account">
-                    <option value="none" disabled defaultValue hidden>---</option>
+                    <option value="none" selected disabled defaultValue>---</option>
                     <option value="parent">Parent</option>
                     <option value="nanny">Nanny</option>
                 </select>
@@ -52,6 +60,7 @@ export default function Register() {
         </form>
 
         <button onClick={handleSubmit}>Register your account</button>
+        <button onClick={navigateBack}>Back</button>
         </>
     );
 }
