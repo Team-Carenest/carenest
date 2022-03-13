@@ -1,11 +1,9 @@
 import { useNavigate } from "react-router";
-import { store } from "../store/Store";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import mariaImage from '../../media/babysitter.jpg';
 
 export default function MessagePage() {
     const [typing, setTyping] = useState('');
-    const [userMessages, setUserMessages] = useState([]);
-
     const navigate = useNavigate();
 
     const navigateBack = () => {
@@ -14,6 +12,7 @@ export default function MessagePage() {
 
     return (
         <div className="nanny-chat">
+            <img alt="Maria" url={mariaImage} />
             <h1>Conversation with Maria W. Ament</h1>
             <div className="nanny-bubble">
                 <p>Maria:</p>
@@ -27,13 +26,6 @@ export default function MessagePage() {
                 {typing ? <p>Me:</p> : null}
                 {typing ? <p>...</p> : null}
             </div>
-            {userMessages.map((each) => {
-                return (
-                    <div className="parent-bubble">
-                        <p>{each}</p>
-                    </div>
-                )
-            })}
 
             <textarea onChange={(e) => e.target.value ? setTyping(e.target.value) : setTyping(null)}>
             </textarea>

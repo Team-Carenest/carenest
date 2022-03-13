@@ -8,6 +8,7 @@ import Register from './components/welcome/Register';
 import SearchPage from './components/SearchPage/SearchPage';
 
 import ParentProfile from './components/profiles/ParentProfile';
+import NannyProfile from './components/profiles/NannyProfile';
 import MessagePage from './components/messaging/MessagePage';
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/parent" element={<ParentProfile />} />
+        <Route path="/parent/elsie" element={<ParentProfile />} />
+        <Route path="/nanny/maria" element={<NannyProfile />} />
         <Route path="/register" element={<Register />} />
         <Route path="/parent/search" element={<SearchPage />} />
         <Route path="/parent/messaging/maria-ament" element={<MessagePage />} />
