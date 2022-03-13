@@ -1,4 +1,5 @@
 import ProfileCard from "../profiles/ProfileCard"
+import ParentProfileCard from "../profiles/ParentProfileCard"
 import { store } from '../store/Store';
 
 export default function SearchResults() {
@@ -37,6 +38,7 @@ export default function SearchResults() {
     return (
         <>
         { mapOntoCards() }
+        <ParentProfileCard />
         </>
     )
 }
