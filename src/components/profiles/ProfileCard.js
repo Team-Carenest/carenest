@@ -11,7 +11,7 @@ export default function ProfileCard( { config }) {
         <div className="profile-card">
             <div className="top-data">
                 <h1>{name}</h1>
-                {/* Image here */}
+                <img alt={name} src={`../../media/${image}`} />
                 <p>{miniBio}</p>
                 <button className="button-style-1">Send a message</button>
             </div>
@@ -23,7 +23,7 @@ export default function ProfileCard( { config }) {
             <div className="bottom-data">
                 <p>{city + ' ' + ZIP}</p>
                 <p>{rating}</p>
-                <p>{price}</p>
+                <p>{'$' + price + '/hour'}</p>
             </div>
         </div>
     )

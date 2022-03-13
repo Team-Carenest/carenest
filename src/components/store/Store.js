@@ -5,7 +5,7 @@ export const store = {
     nannyProfiles: [
         {
             name: 'Maria W. Ament',
-            profileImage: '../../media/babysitter.jpg',
+            profileImage: 'babysitter.jpg',
             miniBio: 'Offering professional care for 12 years',
             longBio: nannyLongBio,
             city: 'Nashville, TN',
@@ -33,7 +33,7 @@ export const store = {
         },
         {
             name: 'Sue R. Vaughn',
-            profileImage: '../../media/babsitter3.jpg',
+            profileImage: 'babysitter3.jpg',
             miniBio: 'libero nunc consequat interdum varius sit amet',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat.',
             city: 'Murfreesboro, TN',
@@ -101,7 +101,7 @@ export const store = {
         },
         {
             name: 'Mildred G. Vandyne',
-            profileImage: '../../media/FamilyPicture2.jpg',
+            profileImage: 'FamilyPicture2.jpg',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
             photoGallery: [
@@ -111,7 +111,7 @@ export const store = {
         },
         {
             name: 'Kari I. Turner',
-            profileImage: '../../media/FamilyPicture3.jpg',
+            profileImage: 'FamilyPicture3.jpg',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
             photoGallery: [
