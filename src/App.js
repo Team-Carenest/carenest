@@ -15,8 +15,7 @@ import MessagePage from './components/messaging/MessagePage';
 import Calendar from './components/calendar/Calendar';
 import Navbar from './components/navbar/Navbar';
 
-function App() {background-color: #C4C4C4;
-  color: black;
+function App() {
   return (
     <div className="App-header">
       <Navbar />
