@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router';
 import './Calendar.css';
 
 export default function Calendar() {
+    const navigate = useNavigate();
+
     const days = () => {
         let nums = [];
         for (let i = 1; i < 32; i++) {
@@ -9,8 +12,13 @@ export default function Calendar() {
 
         return nums;
     }
+
+    const navBack = () => {
+        navigate('/nanny/maria');
+    }
     
     return (
+        <>
         <div className="calendar">
             <div class="month">
                 <ul>
@@ -34,5 +42,8 @@ export default function Calendar() {
                 {days()}
             </ul>
         </div>
+
+        <button onClick={navBack}>Back</button>
+        </>
     );
 }

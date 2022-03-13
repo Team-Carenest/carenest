@@ -30,11 +30,13 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  justify-content: space-between;
+  border-bottom: 4px solid white;
+  border-collapse: collapse;
+  padding-right: 4rem;
+  top: 0;
 }
