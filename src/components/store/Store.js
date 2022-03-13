@@ -4,10 +4,12 @@ const parentLongBio = 'Hi! I am searching for someone to care for my two childre
 export const store = {
     nannyProfiles: [
         {
-            name: 'This Nanny',
+            name: 'Maria W. Ament',
             profileImage: 'put in a url',
             miniBio: 'Offering professional care for 12 years',
             longBio: nannyLongBio,
+            city: 'Nashville, TN',
+            ZIP: 37214,
             skills: {
                 languages: ['English, Spanish'],
                 ageGroups: '2 to 4',
@@ -29,11 +31,43 @@ export const store = {
             ]
         },
         {
-            name: 'This Other Nanny',
+            name: 'Sue R. Vaughn',
             profileImage: 'put in a url',
             miniBio: 'libero nunc consequat interdum varius sit amet',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat.',
-            skills: [],
+            city: 'Murfreesboro, TN',
+            ZIP: 37127,
+            skills: {
+                languages: ['English'],
+                ageGroups: 'teenager'
+            },
+            rating: 5,
+            parentFeedback: [
+                {
+                    parentName: 'Some parent',
+                    profilePhoto: 'put in a url',
+                    rating: 5,
+                    comments: 'These are parent comments'
+                },
+                {
+                    parentName: 'Some parent',
+                    profilePhoto: 'put in a url',
+                    rating: 5,
+                    comments: 'These are parent comments'
+                }
+            ]
+        },
+        {
+            name: 'Cathy M. Winters',
+            profileImage: 'put in a url',
+            miniBio: 'libero nunc consequat interdum varius sit amet',
+            longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis nunc sed blandit libero volutpat.',
+            city: 'Murfreesboro, TN',
+            ZIP: 37127,
+            skills: {
+                languages: ['English'],
+                ageGroups: 'teenager'
+            },
             rating: 5,
             parentFeedback: [
                 {
@@ -53,7 +87,7 @@ export const store = {
     ],
     parentProfiles: [
         {
-            name: 'Some Parent',
+            name: 'Elsie J. Lopez',
             profileImage: 'put in a url',
             miniBio: 'Single mom seeking help with two young children',
             longBio: parentLongBio,
@@ -63,7 +97,17 @@ export const store = {
             ]
         },
         {
-            name: 'Some Parent',
+            name: 'Mildred G. Vandyne',
+            profileImage: 'put in a url',
+            miniBio: 'vitae congue mauris rhoncus aenean vel elit',
+            longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
+            photoGallery: [
+                'url string',
+                'url string 2'
+            ]
+        },
+        {
+            name: 'Kari I. Turner',
             profileImage: 'put in a url',
             miniBio: 'vitae congue mauris rhoncus aenean vel elit',
             longBio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet nulla facilisi morbi tempus iaculis urna. Quis varius quam quisque id diam vel quam elementum.',
