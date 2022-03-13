@@ -10,6 +10,7 @@ import "./components/profiles/profileCard.css"
 import ParentProfile from './components/profiles/ParentProfile';
 import NannyProfile from './components/profiles/NannyProfile';
 import MessagePage from './components/messaging/MessagePage';
+import Calendar from './components/calendar/Calendar';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/parent/search" element={<SearchPage />} />
         <Route path="/parent/messaging/maria-ament" element={<MessagePage />} />
+        <Route path="/nanny/maria/calendar" element={<Calendar />} />
       </Routes>
       </BrowserRouter>
     </div>
