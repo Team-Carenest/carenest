@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 
 export default function ProfileCard( { config }) {
     const name = config.name;
-    const image = config.profileImage;
+    const image = require(`../../media/${config.profileImage}`)
     const miniBio = config.miniBio;
     const city = config.city;
     const ZIP = config.ZIP;
@@ -19,7 +19,7 @@ export default function ProfileCard( { config }) {
         <div className="profile-card">
             <div className="top-data">
                 <h1>{name}</h1>
-                <img alt={name} src={`../../media/${image}`} />
+                <img alt={name} src={image} />
                 <p>{miniBio}</p>
                 <button
                     className="button-style-1"
