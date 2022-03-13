@@ -33,6 +33,7 @@
 .navbar {
   display: flex;
   flex-direction: row;
+  background-color: #C4C4C4;
   position: fixed;
   justify-content: space-between;
   border-bottom: 4px solid white;
