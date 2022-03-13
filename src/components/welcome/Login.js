@@ -16,9 +16,7 @@ export default function Login() {
             return;
         }
 
-        if (username && password) {
-            console.log('you can login!');
-        }
+        navigate('/parent');
     }
 
     const handleNav = () => {
@@ -38,11 +36,10 @@ export default function Login() {
                 <label htmlFor="password">Password: </label>
                 <input type="password" onChange={(e) => setPassword(e.target.value)} required></input>
             </div>
-
-            <button className="button-style-1" onClick={handleLogin}>Login</button>
-
-            <button className="back-button" onClick={handleNav}>Back</button>
         </form>
+
+        <button className="button-style-1" onClick={handleLogin}>Login</button>
+        <button className="back-button" onClick={handleNav}>Back</button>
         </>
     )
 }

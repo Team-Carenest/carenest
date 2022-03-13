@@ -7,6 +7,8 @@ import Login from './components/welcome/Login';
 import Register from './components/welcome/Register';
 import SearchPage from './components/SearchPage/SearchPage';
 
+import ParentProfile from './components/profiles/ParentProfile';
+
 function App() {
   return (
     <div className="App-header">
@@ -14,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Welcome />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/parent" element={<ParentProfile />} />
         <Route path="/register" element={<Register />} />
         <Route path="/parent/search" element={<SearchPage />} />
       </Routes>
